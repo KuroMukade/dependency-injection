@@ -1,5 +1,4 @@
 import { Injectable } from "@nestjs/common";
-import { ILogger } from "../ILogger.interface";
 import { AbstractLoggerService } from "../abstract-logger";
 
 @Injectable()
@@ -14,3 +13,4 @@ export class ConsoleLoggerService extends AbstractLoggerService {
     console.warn(msg);
   }
 }
+ 

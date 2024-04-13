@@ -3,7 +3,9 @@ import type { ILogger } from "./logger/logger.interface";
 import { SentryLogger } from "./logger/sentry-logger";
 
 const logger =
-  process.env.NODE_ENV === "PRODUCTION" ? new SentryLogger() : new ConsoleLogger();
+  process.env.NODE_ENV === "PRODUCTION"
+    ? new SentryLogger()
+    : new ConsoleLogger();
 
 class PaymentService {
   constructor(private readonly _logger: ILogger) {
