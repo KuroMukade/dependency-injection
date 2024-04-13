@@ -1,0 +1,20 @@
+{
+  "name": "dependency-injection",
+  "version": "1.0.0",
+  "description": "clean pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/inversify": "^2.0.33",
+    "inversify": "^6.0.2",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25"
+  }
+}
